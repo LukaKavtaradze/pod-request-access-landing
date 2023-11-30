@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Chivo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html {
   font-size: 10px;
@@ -7,6 +7,7 @@ html {
 
 body {
   display: flex;
+    background: #121725;
   flex-direction: column;
   align-items: center;
   
@@ -68,7 +69,7 @@ h1 {
   font-weight: 400;
   line-height: 3.8rem; /* 146.154% */
   text-transform: uppercase;
-  width: 32.7rem;
+  width: 327px;
 }
 
 h1 span {
@@ -85,7 +86,7 @@ p {
   color: #c2cbe5;
   text-align: center;
   font-family: Chivo;
-  font-size: 1.5rem;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 2.5rem;
@@ -193,67 +194,83 @@ form {
   }
   .wrapper{
     width: 471px;
-    height: 700px;
+   min-height: 700px;
     margin-left: 290px;
   }
   header {
     align-self: flex-start;
     position: absolute;
-    top: -250px;
+    top: -200px;
     left: -5px;
   }
   .container {
     background: #121725;
     flex-direction: row;
     align-items: flex-start;
-    margin:350px 30px 0px 39px;
+    margin:450px 100px 0px 39px;
+    width: 635px;
+  
+    
+ 
   }
   main{
     align-items: flex-start;
-    width: 635px;
-  }
+    margin:  0;
+    
+    /* padding-top: 90px; */
 
+  }
   .title{
     align-items: flex-start;
+      padding-top: 50px;
+    
+   
   }
   h1 {
+    margin: 0;
     width: 635px;
     font-size: 48px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 56px; /* 116.667% */
+    font-weight: 100;
+    line-height: 56px;
     text-transform: uppercase;
     text-align: start;
   }
+
   h1 span {
     color: #fff;
     font-family: Chivo;
     font-size: 48px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 100;
     line-height: 56px;
     text-transform: uppercase;
     text-align: start;
   }
   p {
+   
     width: 445px;
     font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 100;
     line-height: 28px;
-    margin-top: 31px;
+    
     text-align: start;
   }
   .sponsors{
   order: 2;
-  margin-top: 50px;
+  margin-top: 20px;
+
   }
   
- 
   .email{
     position: relative;
     width: 427px;
     height: 56px;
+  }
+  .request{
+  margin-top: 20px;
+  /* margin-top: 30px; */
   }
   .request-button{
     position: absolute;
@@ -275,7 +292,7 @@ form {
   }
   .google {
     width: 125px;
-height: 18px;
+  height: 18px;
   }
   .pocket {
     width: 129px;
@@ -283,11 +300,74 @@ height: 18px;
   }
 .pattern{
     order: 2;
-    margin-top:60px;
+    margin-top:100px;
    
 }
   .pattern img {
-    display: block;
+    display: flex;
 
   }
+
+  .wrapper::before {
+  
+    opacity: 0.2993;
+    background: #54E6AF;
+    mix-blend-mode: multiply;
+  }
+}
+
+@media(min-width:1440px) {
+  .wrapper{
+    background-image: url(./assets/image-host.jpg);
+    width: 888px;
+  height: 640px;
+  margin-top: 150px;
+
+ align-self: flex-end;
+  }
+  .container{
+    width: 723px;
+    right: 400px;
+
+  }
+  .title{
+    margin:0;
+    gap: 0px;
+  }
+  p{
+    margin-top: 24px;
+  }
+  h1{
+    color: #54E6AF;
+ width: 665px;
+font-family: Chivo;
+font-size: 52px;
+font-style: normal;
+line-height: 62px;
+
+  }
+  h1 span{
+    color: #FFF;
+font-family: Chivo;
+font-size: 52px;
+font-style: normal;
+font-weight: 100;
+line-height: 62px;
+text-transform: uppercase;
+  }
+
+  .sponsors{
+    margin-top: 30px;
+  }
+  .request{
+    margin-top: 20px;
+  }
+  .pattern{
+    position: absolute;
+   top: 300px;
+   left: 900px;
+  }
+
+
+
 }
