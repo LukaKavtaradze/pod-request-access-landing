@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Pod-Request-Acces-Landing</title>
 </head>
 <body>
@@ -30,9 +31,10 @@
                     </div>
                 </section>
                 <section class="request">
-                    <form action="">
-                        <input class="email" type="Email" placeholder="Email adress">
-                        <button class="request-button" type="submit"> Request Access</button>
+                    <form action="/" method=" get">
+                        <input id="email" type="text" placeholder="Email adress" >
+                        <span id="email-error"></span>
+                        <button id="request-button" type="submit"> Request Access</button>
                     </form>
                 </section>
                 <section class="pattern" >
